@@ -13,9 +13,8 @@
 <script>
     // 调试信息使用
         eruda.init();
-
     //获得video摄像头区域
-    console.log(navigator.mediaDevices);
+    alert(navigator.mediaDevices);
     let video = document.getElementById("video");
     function getMedia() {
         let constraints = {
@@ -46,4 +45,3 @@
 </script>
 </body>
 </html>
- 
