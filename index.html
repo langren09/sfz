@@ -13,7 +13,7 @@
     <button id="capture">拍照</button>
   </div>
   <canvas id="canvas" width="480" height="320"></canvas>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/eruda"></script>
+  <script type="text/javascript" src="./js/eruda.min.js"></script>
   <script>
     // 调试信息使用
         eruda.init();
@@ -43,7 +43,7 @@
       //兼容webkit核心浏览器
       let CompatibleURL = window.URL || window.webkitURL;
       //将视频流设置为video元素的源
-      console.log(stream);
+      console.log(1, stream);
  
       //video.src = CompatibleURL.createObjectURL(stream);
       video.srcObject = stream;
