@@ -30,6 +30,17 @@
             如果用户同意使用权限,则会将 MediaStream对象作为resolve()的参数传给then()
             如果用户拒绝使用权限,或者请求的媒体资源不可用,则会将 PermissionDeniedError作为reject()的参数传给catch()
             */
+            // initAudio();
+            // function initAudio() {
+            //     if (navigator.mediaDevices.getUserMedia || navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia) {
+            //         //调用用户媒体设备，访问摄像头
+            //         getUserMedia({
+            //             audio: true
+            //         }, gotStream, error);
+            //     } else {
+            //         alert("你的浏览器不支持访问用户媒体设备");
+            //     }
+            // }
             let promise = navigator.mediaDevices.getUserMedia(constraints);
             promise.then(function (MediaStream) {
                 video.srcObject = MediaStream;
