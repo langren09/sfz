@@ -9,10 +9,10 @@
 <video id="video" width="500px" height="500px" autoplay="autoplay"></video>
 <canvas id="canvas" width="500px" height="500px"></canvas>
 <button id="snap" onclick="takePhoto()">拍照</button>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/eruda"></script>
+<script type="text/javascript" src="./js/eruda.min.js"></script>
 <script>
     // 调试信息使用
-        eruda.init();
+    eruda.init();
     //获得video摄像头区域
     alert(navigator.mediaDevices);
     let video = document.getElementById("video");
